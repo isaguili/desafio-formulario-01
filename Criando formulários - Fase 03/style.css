@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EFEFEF;
+  
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  
+  color: #535971;
+}
+
+body::before {
+  content:'';
+  
+  width: 100%;
+  height: 436px;
+  
+  background-color: #535971;
+
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.page {
+  width: 750px;
+  margin: 140px auto 365px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  
+  width: 417px;
+  
+  color: #FFFFFF;
+}
+
+h1, h2, legend {
+  font-family: 'Staatliches', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 20px;
+}
+
+form {
+  min-height: 1000x;
+  background-color: white;
+  margin-top: 58px;
+  
+  display: flex;
+  flex-direction: column;
+  
+  border-radius: 20px 20px 0px 0px;
+  padding: 64px;
+  gap: 30px;
+}
+
+.fieldset-wrapper {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+legend {
+  width: 100%;
+  
+  border-bottom: 1px solid #E6E6F0;
+  
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+
+form > fieldset:nth-child(1) > legend:nth-child(1) {
+  padding-bottom: 16px;
+}
+
+span {
+  color: #C1BCCC;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.complete-name {
+  display: flex;
+  gap: 22px;
+}
+
+.complete-name .input-wrapper {
+  width: 100%;
+}
+
+input {
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  padding: 0 24px;
+  
+  background: var(--shapes-02, #FAFAFC);
+  
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6a71;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.data-e-hora {
+  display: flex;
+  gap:10px;
+}
+
+.data-e-hora > div:nth-child(1) {
+  width: 100%;
+  margin-right: 22px;
+}
+
+.fieldset-wrapper-date {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fieldset-wrapper-date legend {  
+  border-bottom: none;
+  margin-bottom: 8px;
+  padding-bottom: 0px;
+}
+
+.submit-wrapper {
+  padding: 0px;
+  width: 100%;
+  height: 160px;
+  background-color: #535971;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.submit-wrapper input {
+  font-family: 'Staatliches', sans-serif;
+  color: #FFFFFF;
+  background-color: #FF5374;
+  border: none;
+  border-radius: 20px;
+  margin: auto;
+  width: 608px;
+  height: 56px
+}
+
+.submit-wrapper input:hover {
+  background-color: #f11c47;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
